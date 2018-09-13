@@ -1,0 +1,119 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Corpo Saudável</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_crianca">Criança</string>
+    <string name="title_activity_crianca_vacina">Cartão</string>
+
+    <!--  -->
+
+    <string name="ligaui_technologies_copyright_c_2018" tools:ignore="TypographyOther">Naja Real technologies copyright (C) 2018</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="liga_angola">Liga Angola</string>
+    <string name="naja_real">Nanja Real</string>
+    <string name="stay_smart_stay_startup_intellijent">stay smart startup intelligent</string>
+    <string name="cuidando_da_vacina_dos_seus_filhos">Cuidando da vacina dos seus filhos</string>
+    <string name="title_activity_registar_cartao_vacina">RegistarCartaoVacinaActivity</string>
+    <string name="title_activity_editar_cartao_vacina">EditarCartaoVacinaActivity</string>
+    <string name="registar_cart_o_de_vacina">Registar cartão de vacina</string>
+    <string name="visualizar_informa_es_do_cart_o_de_vacina">Visualizar informações do cartão de vacina</string>
+    <string name="nome_da_crianca">Nome da Criança</string>
+    <string name="data_de_nascimento">Data De Nascimento</string>
+    <string name="peso_nascenca">Peso à Nascença</string>
+    <string name="nacionalidade">Nacionalidade</string>
+    <string name="naturalidade">Naturalidade</string>
+    <string name="nome_da_mae">Nome Da Mãe</string>
+    <string name="nome_do_pai">Nome Do Pai</string>
+    <string name="morada">Morada</string>
+    <string name="local_do_parto">Local Do Parto</string>
+    <string name="tipo_de_parto">Tipo De Parto</string>
+    <string name="apgar">Apgar</string>
+    <string name="kg"> Kg</string>
+    <string name="unidade_sanit_ria">Unidade Sanitária</string>
+    <string name="responsavel_parteira">Responsável (Parteira)</string>
+    <string name="vacina">Vacina</string>
+    <string name="estado">Estado</string>
+    <string name="dose">ª Dose</string>
+    <string name="a_vacina_foi_administrada">a vacina foi administrada</string>
+
+    <string name="janeiro">Janeiro</string>
+    <string name="fevereiro">Fevereiro</string>
+    <string name="marco">Março</string>
+    <string name="abril">Abril</string>
+    <string name="maio">Maio</string>
+    <string name="junho">Junho</string>
+    <string name="julho">Julho</string>
+    <string name="agosto">Agosto</string>
+    <string name="setembro">Setembro</string>
+    <string name="outubro">Outubro</string>
+    <string name="novembro">Novembro</string>
+    <string name="dezembro">Dezembro</string>
+    <string name="dataFim">DATA DE FIM</string>
+    <string name="dataInicio">DATA DE INICIO</string>
+    <string name="nao">NÃO</string>
+    <string name="sim">SIM</string>
+    <string name="ApagarCartaoDeVacina">Apagar o cartão de vacina do seu filho?</string>
+    <string name="SimApagarCartaoDeVacinaDescricao">Se apagar o cartão perderá os dados das vacinas do seu filho</string>
+    <string name="apagar">Apagar</string>
+    <string name="editar">Editar</string>
+    <string name="visualizar">Visualizar</string>
+    <string name="preencherNomeDoCartao">Preencha do nome para o cartão</string>
+    <string name="informeDoisNomes">Informe pelo menos 2 nomes</string>
+    <string name="InformePesoValido">Informe um peso válido</string>
+    <string name="noHospital">No Hospital</string>
+    <string name="emCasa">Em Casa</string>
+    <string name="naRua">Na Rua</string>
+    <string name="informeAMorada">Informe a morada</string>
+    <string name="informeAUnidadeHospitalar">Informe a Unidade Hospitalar</string>
+    <string name="informePaiOuMae">Informe o nome do pai ou da mãe</string>
+    <string name="DataDeNascimentoDeveSerAnteriorADataActual">A data de nascimento deve ser anterior a data actual</string>
+    <string name="InformeUmaDataValida">Informe uma data valida</string>
+    <string name="verifiqueOPesoRecemNascido2_5Kg">Verifique o peso, recem-nascido têm o peso entre 2,5 KG e 4 KG</string>
+    <string name="apagarPesoDefinitivo">Se a pagar o peso será definitivo</string>
+    <string name="desejaApagarOPeso">Deseja apagar o peso? Pode editar o valor</string>
+    <string name="xVacinasEmAtraso">Vacinas atrasadas</string>
+
+    <string name="policyPrivacy" translatable="false">Politica de Privacidade</string>
+
+    <string name="inicio">inicio</string>
+    <string name="avancar">avançar</string>
+    <string name="versao">Versão</string>
+    <string name="campanhas">Campanhas</string>
+    <string name="detalhesDaVacina">Detalhas da Vacina</string>
+    <string name="medicaoDoPeso">Medição do Peso</string>
+    <string name="medicaoDaAltura">Medicão da Altura</string>
+    <string name="medicaoDaTemperatura">Medicão Da Temperatura</string>
+    <string name="Graficos">Gráficos</string>
+    <string name="descricaoApp">é o aplicativo desenvolvido para o registo centralizado dos cartões de vacina dos seus filhos</string>
+    <string name="descricaoRegistos">Registe as vacinas, medicao de peso, altura e temperatura</string>
+    <string name="graficosEOrientacoes">Gráficos e Orientações</string>
+
+    <string name="googleDriveApi">AIzaSyD1cwxuJK6m-ngJrNPGCK3e2JRVmVGsuoU</string>
+
+    <integer-array name="apgar">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+    <string-array name="tipoDeParto">
+        <item>Normal</item>
+        <item>Cesariana</item>
+        <item>Distócico</item>
+    </string-array>
+
+    <string-array name="LocalDoParto">
+        <item>@string/emCasa</item>
+        <item>@string/noHospital</item>
+        <item>@string/naRua</item>
+    </string-array>
+    <string name="title_activity_google_drive">GoogleDriveActivity</string>
+    <string name="selecionaUmaCrianca">Selecione uma criança</string>
+    <string name="editarDadosDaCrianca">Editar Dados Da Criança</string>
+    <string name="id">id</string>
+    <string name="tipo">tipo</string>
+    <string name="enviandoSugestao">Enviando a sugestão  ...</string>
+
+</resources>

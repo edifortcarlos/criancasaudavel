@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ao.co.najareal.vaciname.MainActivity">
+
+    <item
+        android:id="@+id/mnuVisualizar"
+        android:orderInCategory="100"
+        android:title="@string/visualizar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuApagar"
+        android:orderInCategory="100"
+        android:title="@string/apagar"
+        app:showAsAction="never" />
+</menu>

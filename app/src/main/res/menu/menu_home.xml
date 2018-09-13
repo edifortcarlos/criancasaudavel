@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuCampanha"
+        android:enabled="true"
+        android:icon="@drawable/ic_gota_24dp"
+        android:title="Campanha"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuSugestoes"
+        android:enabled="true"
+        android:title="Sugestoes/Reclamações"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuTour"
+        android:enabled="true"
+        android:title="Desmonstração da app"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuPoliticaPrivacidade"
+        android:enabled="true"
+        android:title="Politica de Privacidade"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuSobre"
+        android:enabled="true"
+        android:title="Sobre a app"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "596478551334",
+    "firebase_url": "https://vaciname-df195.firebaseio.com",
+    "project_id": "vaciname-df195",
+    "storage_bucket": "vaciname-df195.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596478551334:android:e0a3a4a2a147e6c7",
+        "android_client_info": {
+          "package_name": "ao.co.najareal.vaciname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596478551334-muejbk0jo5hvj0459epriedu1i2trsph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ao.co.najareal.vaciname",
+            "certificate_hash": "4e7bc271add411200bb19999fa8e2246099ad22d"
+          }
+        },
+        {
+          "client_id": "596478551334-bq7s2ug7qimcpj9tcsho9r5ncu32qhqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUTBPaX6GpybbsT83DlBDrFglHOyzcmDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596478551334-bq7s2ug7qimcpj9tcsho9r5ncu32qhqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

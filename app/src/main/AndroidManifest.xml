@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ao.co.najareal.vaciname">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logonovo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ui.CriancaActivity"
+            android:label="@string/title_activity_crianca"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.CriancaVacinaActivity"
+            android:label="@string/title_activity_crianca_vacina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.PlanoNacionalDeVacinaActivity" />
+        <activity
+            android:name=".ui.VacinaDetalheActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".ui.graph.MedidasActivity" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".ui.graph.MedidasValoresActivity" />
+        <activity android:name=".ui.CampanhaActivity" />
+        <activity
+            android:name=".ui.info.BemVindo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.info.SobreActivity" />
+        <activity android:name=".ui.info.PolicyPrivacyActivity" />
+
+        <activity android:name=".ui.TesteActivity">
+
+        </activity>
+        <activity android:name=".ui.store.SyncDataActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ui.notifications.AlertaVacina" />
+        <receiver android:name=".database.AlarmeVacina" />
+        <receiver android:name=".database.BootReciverImpl">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

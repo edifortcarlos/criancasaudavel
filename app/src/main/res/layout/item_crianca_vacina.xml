@@ -1,0 +1,238 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin_bottom"
+    android:layout_marginEnd="@dimen/card_margin_right"
+    android:layout_marginLeft="@dimen/card_marign_left"
+    android:layout_marginRight="@dimen/card_margin_right"
+    android:layout_marginStart="@dimen/card_marign_left"
+    android:layout_marginTop="18dp"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="false"
+    tools:ignore="RtlHardcoded"
+    card_view:cardCornerRadius="@dimen/size16dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/registar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingEnd="@dimen/size16dp"
+            android:paddingStart="@dimen/size16dp"
+            android:paddingTop="@dimen/size16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtNome"
+                        android:layout_toStartOf="@+id/imgDelete"
+                        android:layout_weight="4"
+                        android:ellipsize="end"
+                        android:ems="20"
+                        android:maxLines="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="4dp"
+                        android:text="Dose: "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:typeface="serif"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+                    <TextView
+                        android:id="@+id/btnDose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:ems="20"
+                        android:maxLines="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="4dp"
+                        android:text="1ª Dose"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:typeface="serif"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtEstado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtNome"
+                        android:layout_gravity="right"
+                        android:layout_toStartOf="@+id/imgDelete"
+                        android:ellipsize="end"
+                        android:ems="20"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="4dp"
+                        android:text="Estado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:typeface="serif"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUnidadeHospitalar"
+                    android:layout_width="242dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:ems="20"
+                    android:maxLines="1"
+                    android:text="Unidade Hospital"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:typeface="serif"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txtData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:ems="20"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="4dp"
+                    android:text="23/09/1989"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:typeface="serif"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size16dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layoutImgEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rodondo"
+                    android:padding="4dp"
+                    android:layout_margin="@dimen/size4dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgEditar"
+                            android:layout_width="24dp"
+                            android:padding="@dimen/size4dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_edit_24dp"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutImgDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rodondodois"
+                    android:padding="4dp"
+                    android:layout_margin="@dimen/size4dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgDelete"
+                            android:layout_width="24dp"
+                            android:padding="@dimen/size4dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_gota_off_24dp"
+                            tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

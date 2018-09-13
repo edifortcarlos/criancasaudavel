@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin_bottom"
+    android:layout_marginEnd="@dimen/card_margin_right"
+    android:layout_marginLeft="@dimen/card_marign_left"
+    android:layout_marginRight="@dimen/card_margin_right"
+    android:layout_marginStart="@dimen/card_marign_left"
+    android:layout_marginTop="@dimen/card_magin_top"
+    card_view:cardCornerRadius="@dimen/card_corner_radius"
+    card_view:cardElevation="@dimen/card_elevation"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingEnd="@dimen/size16dp"
+            android:paddingStart="@dimen/size16dp"
+            android:paddingTop="@dimen/size16dp">
+
+            <ImageView
+                android:id="@+id/mMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_options"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/cuia"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/imgFoto"
+                android:layout_toLeftOf="@id/imgFoto"
+                android:layout_toRightOf="@id/imgFoto"
+                android:layout_toStartOf="@id/mMenu"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/visualizar_informa_es_do_cart_o_de_vacina"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <ImageView
+                android:id="@+id/row_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNome"
+                android:layout_marginBottom="@dimen/size16dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="180dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_post_height"
+            android:clickable="false"
+            android:divider="?android:dividerVertical"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/btnIdade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Idade da criança"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <Button
+                android:id="@+id/btnPeso"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6 KG"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            <Button
+                android:id="@+id/btnVacinasAtrasadas"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4 vacina em risco"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
