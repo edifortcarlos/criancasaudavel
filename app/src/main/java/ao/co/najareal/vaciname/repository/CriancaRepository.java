@@ -74,6 +74,14 @@ public class CriancaRepository {
         return criancaDao.getAllVacinasAtrasadasLiveData(idCrianca,dataRecomendada,VacinaEnums.AGENDADA);
     }
 
+    public LiveData<List<CriancaVacina>> getAllVacinasDispensadaLiveData(int idCrianca,long dataRecomendada)  {
+        return criancaDao.getAllVacinasAtrasadasLiveData(idCrianca,dataRecomendada,VacinaEnums.DISPENSADA);
+    }
+
+    public LiveData<List<CriancaVacina>> getAllVacinasFeitasLiveData(int idCrianca,long dataRecomendada)  {
+        return criancaDao.getAllVacinasAtrasadasLiveData(idCrianca,dataRecomendada,VacinaEnums.FEITA);
+    }
+
     public LiveData<Integer> getQtdVacinasAtrasadasLiveData(int idCrianca,long dataRecomendada)  {
         return criancaDao.getQtdVacinasAtrasadasLiveData(idCrianca,dataRecomendada,VacinaEnums.AGENDADA);
     }

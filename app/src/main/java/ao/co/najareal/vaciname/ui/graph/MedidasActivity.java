@@ -31,7 +31,7 @@ import ao.co.najareal.vaciname.model.AlturaCrianca;
 import ao.co.najareal.vaciname.model.PesoCrianca;
 import ao.co.najareal.vaciname.model.TemperaturaCrianca;
 import ao.co.najareal.vaciname.model.util.Medida;
-import ao.co.najareal.vaciname.ui.util.DataPickerListnerDataDoVeiculo;
+import ao.co.najareal.vaciname.ui.util.DataPickerListnerData;
 import ao.co.najareal.vaciname.ui.util.Dialogos;
 import ao.co.najareal.vaciname.viewModel.CriancaViewModel;
 
@@ -431,7 +431,7 @@ public class MedidasActivity extends AppCompatActivity implements View.OnClickLi
         final EditText txtPeso = v.findViewById(R.id.txtPeso);
         Button btnSalvar = v.findViewById(R.id.btnSalvar);
         Button btnCancelar = v.findViewById(R.id.btnCancelar);
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtData, null);
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtData, null);
         txtData.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         dialog.setView(v);
@@ -481,7 +481,7 @@ public class MedidasActivity extends AppCompatActivity implements View.OnClickLi
         final EditText txtAltura = v.findViewById(R.id.txtAltura);
         Button btnSalvar = v.findViewById(R.id.btnSalvar);
         Button btnCancelar = v.findViewById(R.id.btnCancelar);
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtData, null);
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtData, null);
         txtData.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         dialog.setView(v);
@@ -558,7 +558,7 @@ public class MedidasActivity extends AppCompatActivity implements View.OnClickLi
         final EditText txtTemperatura = v.findViewById(R.id.txtTemperatura);
         Button btnSalvar = v.findViewById(R.id.btnSalvar);
         Button btnCancelar = v.findViewById(R.id.btnCancelar);
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtData, null);
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtData, null);
         txtData.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         dialog.setView(v);

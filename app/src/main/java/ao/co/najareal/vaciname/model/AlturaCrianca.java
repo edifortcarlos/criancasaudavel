@@ -18,7 +18,6 @@ public class AlturaCrianca {
 
     private float altura;
 
-
     public int getId() {
         return id;
     }

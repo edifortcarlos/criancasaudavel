@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DataPickerListnerDataDoVeiculo implements DatePickerDialog.OnDateSetListener, View.OnFocusChangeListener {
+public class DataPickerListnerData implements DatePickerDialog.OnDateSetListener, View.OnFocusChangeListener {
 
     private EditText txtData;
     private Date date;
@@ -22,12 +22,12 @@ public class DataPickerListnerDataDoVeiculo implements DatePickerDialog.OnDateSe
         return dataObtida;
     }
 
-    public DataPickerListnerDataDoVeiculo(EditText txtData, Date data) {
+    public DataPickerListnerData(EditText txtData, Date data) {
         this.txtData = txtData;
         this.date = data;
     }
 
-    public DataPickerListnerDataDoVeiculo(EditText txtData, long date) {
+    public DataPickerListnerData(EditText txtData, long date) {
         this.txtData = txtData;
         this.date = new Date(date);
     }
@@ -41,6 +41,7 @@ public class DataPickerListnerDataDoVeiculo implements DatePickerDialog.OnDateSe
         dataObtida = calendar.getTime();
 
         //DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+        //txtData.setText(sdf.format(dataObtida));
         txtData.setText(sdf.format(dataObtida));
     }
 

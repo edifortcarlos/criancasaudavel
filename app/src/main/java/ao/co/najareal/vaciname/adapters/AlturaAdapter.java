@@ -16,7 +16,7 @@ import java.util.List;
 
 import ao.co.najareal.vaciname.R;
 import ao.co.najareal.vaciname.model.AlturaCrianca;
-import ao.co.najareal.vaciname.ui.util.DataPickerListnerDataDoVeiculo;
+import ao.co.najareal.vaciname.ui.util.DataPickerListnerData;
 import ao.co.najareal.vaciname.viewModel.CriancaViewModel;
 
 public class AlturaAdapter extends RecyclerView.Adapter<AlturaAdapter.AlturaViewHolder> {
@@ -105,7 +105,7 @@ public class AlturaAdapter extends RecyclerView.Adapter<AlturaAdapter.AlturaView
         dialog.setView(v);
         final android.support.v7.app.AlertDialog ab = dialog.create();
 
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtData, crianca.getData());
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtData, crianca.getData());
         txtData.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {

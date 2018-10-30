@@ -19,6 +19,27 @@
         android:title="Adicionar Tempreatura"
         app:showAsAction="never" />
     <item
+        android:id="@+id/menuVerVacinasFeitas"
+        android:enabled="true"
+        android:icon="@drawable/ic_vacina_um"
+        android:title="Ver Gráficos"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_gota_off_24dp"
+        android:enabled="true"
+        android:icon="@drawable/ic_gota_off_24dp"
+        android:title="Ver Gráficos"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuVerVacinasCanceladas"
+        android:enabled="true"
+        android:icon="@drawable/ic_cancelado"
+        android:title="Ver Gráficos"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/menuVerGraficos"
         android:enabled="true"
         android:icon="@drawable/ic_timeline_24dp"

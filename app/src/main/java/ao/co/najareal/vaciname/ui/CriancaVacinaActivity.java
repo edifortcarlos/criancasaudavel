@@ -1,15 +1,12 @@
 package ao.co.najareal.vaciname.ui;
 
-import android.app.AlertDialog;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -25,28 +22,23 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import ao.co.najareal.vaciname.R;
 import ao.co.najareal.vaciname.adapters.CriancaVacinaAdapter;
 import ao.co.najareal.vaciname.database.VacinameRoomDatabase;
-import ao.co.najareal.vaciname.model.AlturaCrianca;
 import ao.co.najareal.vaciname.model.Crianca;
 import ao.co.najareal.vaciname.model.CriancaVacina;
 import ao.co.najareal.vaciname.model.PesoCrianca;
-import ao.co.najareal.vaciname.model.TemperaturaCrianca;
 import ao.co.najareal.vaciname.model.Vacina;
 import ao.co.najareal.vaciname.model.util.Medida;
 import ao.co.najareal.vaciname.model.util.Sexo;
 import ao.co.najareal.vaciname.ui.graph.MedidasActivity;
 import ao.co.najareal.vaciname.ui.graph.MedidasValoresActivity;
-import ao.co.najareal.vaciname.ui.util.DataPickerListnerDataDoVeiculo;
-import ao.co.najareal.vaciname.ui.util.Dialogos;
+import ao.co.najareal.vaciname.ui.util.DataPickerListnerData;
 import ao.co.najareal.vaciname.viewModel.CriancaViewModel;
 import ao.co.najareal.vaciname.viewModel.VacinaViewModel;
 
@@ -200,6 +192,8 @@ public class CriancaVacinaActivity extends AppCompatActivity implements View.OnC
             public void onChanged(@Nullable PesoCrianca pesoCrianca) {
                 if (pesoCrianca != null && pesoCrianca.getPeso() > 0) {
                     txtPeso.setText(String.valueOf(pesoCrianca.getPeso()) + " " + getString(R.string.kg));
+                }else{
+                    txtPeso.setText(txtPesoNascenca.getText().toString());
                 }
             }
         });
@@ -338,7 +332,7 @@ public class CriancaVacinaActivity extends AppCompatActivity implements View.OnC
         final android.support.v7.app.AlertDialog ab = dialog.create();
 
 
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtDataDeNascimento1, crianca.getDataDeNascimento());
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtDataDeNascimento1, crianca.getDataDeNascimento());
         txtDataDeNascimento1.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
@@ -346,7 +340,7 @@ public class CriancaVacinaActivity extends AppCompatActivity implements View.OnC
             public void onClick(View v) {
                 Crianca c = crianca;
                 c.setNome(txtNome1.getText().toString());
-                c.setDataDeNascimento(listnerDataDoVeiculo.getDataObtida().getTime());
+                //c.setDataDeNascimento(listnerDataDoVeiculo.getDataObtida().getTime());
                 c.setMae(txtMae.getText().toString());
                 c.setPai(txtPai.getText().toString());
                 c.setMorada(txtMorada.getText().toString());

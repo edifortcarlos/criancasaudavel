@@ -42,7 +42,7 @@ import ao.co.najareal.vaciname.ui.fragmentos.SectionsPagerAdapter;
 import ao.co.najareal.vaciname.ui.info.BemVindo;
 import ao.co.najareal.vaciname.ui.info.PolicyPrivacyActivity;
 import ao.co.najareal.vaciname.ui.info.SobreActivity;
-import ao.co.najareal.vaciname.ui.util.DataPickerListnerDataDoVeiculo;
+import ao.co.najareal.vaciname.ui.util.DataPickerListnerData;
 import ao.co.najareal.vaciname.viewModel.CriancaViewModel;
 
 public class HomeActivity extends AppCompatActivity {
@@ -251,7 +251,7 @@ public class HomeActivity extends AppCompatActivity {
         final AlertDialog ab = dialog.create();
 
 
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtDataDeNascimento, null);
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtDataDeNascimento, null);
         txtDataDeNascimento.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {

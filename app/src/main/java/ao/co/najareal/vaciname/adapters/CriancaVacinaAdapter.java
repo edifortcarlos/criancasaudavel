@@ -3,7 +3,6 @@ package ao.co.najareal.vaciname.adapters;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,7 @@ import ao.co.najareal.vaciname.R;
 import ao.co.najareal.vaciname.model.CriancaVacina;
 import ao.co.najareal.vaciname.model.Vacina;
 import ao.co.najareal.vaciname.model.util.VacinaEnums;
-import ao.co.najareal.vaciname.ui.util.DataPickerListnerDataDoVeiculo;
+import ao.co.najareal.vaciname.ui.util.DataPickerListnerData;
 import ao.co.najareal.vaciname.viewModel.CriancaViewModel;
 import ao.co.najareal.vaciname.viewModel.VacinaViewModel;
 
@@ -77,7 +76,7 @@ public class CriancaVacinaAdapter extends RecyclerView.Adapter<CriancaVacinaAdap
 
         Button btnSalvar = v.findViewById(R.id.btnSalvar);
         Button btnCancelar = v.findViewById(R.id.btnCancelar);
-        final DataPickerListnerDataDoVeiculo listnerDataDoVeiculo = new DataPickerListnerDataDoVeiculo(txtData, null);
+        final DataPickerListnerData listnerDataDoVeiculo = new DataPickerListnerData(txtData, null);
         txtData.setOnFocusChangeListener(listnerDataDoVeiculo);
 
         rbFeita.setText(VacinaEnums.FEITA);
